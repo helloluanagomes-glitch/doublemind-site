@@ -173,150 +173,24 @@ export function InfoPanel({
         );
 
       case "download":
-        return (
-          <div>
-            <p
-              style={{
-                fontFamily: "IBM Plex Sans, sans-serif",
-                fontSize: "16px",
-                lineHeight: 1.5,
-                color: "#111",
-                fontWeight: 400,
-                marginBottom: "32px",
-              }}
-            >
-              {t.downloadPanelIntro}
-            </p>
+  return (
+    <div>
+      <p
+        style={{
+          fontFamily: "IBM Plex Sans, sans-serif",
+          fontSize: "16px",
+          lineHeight: 1.5,
+          color: "#111",
+          fontWeight: 400,
+          marginBottom: "16px",
+        }}
+      >
+        PDF downloads will be available soon.  
+        For now, you can explore and use the DoubleMind canvas right here.
+      </p>
+    </div>
+  );
 
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: "16px",
-              }}
-            >
-              {/* Empty PDF Option */}
-              <div
-                className="download-option"
-                style={{
-                  border: "1px solid #E0E0E0",
-                  borderRadius: "0px",
-                  padding: "20px",
-                  backgroundColor: "#FFF",
-                  transition: "all 0.2s ease",
-                }}
-              >
-                <h3
-                  style={{
-                    fontFamily: "IBM Plex Sans, sans-serif",
-                    fontSize: "18px",
-                    fontWeight: 700,
-                    color: "#111",
-                    marginBottom: "8px",
-                  }}
-                >
-                  {t.emptyPdfLabel}
-                </h3>
-                <p
-                  style={{
-                    fontFamily: "IBM Plex Sans, sans-serif",
-                    fontSize: "14px",
-                    lineHeight: 1.5,
-                    color: "#666",
-                    fontWeight: 400,
-                    marginBottom: "16px",
-                  }}
-                >
-                  {t.emptyPdfDescription}
-                </p>
-                <button
-                  onClick={() => handleDownload("empty")}
-                  className="download-btn"
-                  style={{
-                    width: "100%",
-                    padding: "12px 20px",
-                    backgroundColor: "#111",
-                    color: "#FFF",
-                    border: "none",
-                    borderRadius: "0px",
-                    fontFamily: "IBM Plex Sans, sans-serif",
-                    fontSize: "14px",
-                    fontWeight: 600,
-                    cursor: "pointer",
-                    transition: "background-color 0.2s ease",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "8px",
-                  }}
-                >
-                  <Download size={16} strokeWidth={2} />
-                  <span>{t.emptyPdfLabel}</span>
-                </button>
-              </div>
-
-              {/* Complete PDF Option */}
-              <div
-                className="download-option"
-                style={{
-                  border: "1px solid #E0E0E0",
-                  borderRadius: "0px",
-                  padding: "20px",
-                  backgroundColor: "#FFF",
-                  transition: "all 0.2s ease",
-                }}
-              >
-                <h3
-                  style={{
-                    fontFamily: "IBM Plex Sans, sans-serif",
-                    fontSize: "18px",
-                    fontWeight: 700,
-                    color: "#111",
-                    marginBottom: "8px",
-                  }}
-                >
-                  {t.completePdfLabel}
-                </h3>
-                <p
-                  style={{
-                    fontFamily: "IBM Plex Sans, sans-serif",
-                    fontSize: "14px",
-                    lineHeight: 1.5,
-                    color: "#666",
-                    fontWeight: 400,
-                    marginBottom: "16px",
-                  }}
-                >
-                  {t.completePdfDescription}
-                </p>
-                <button
-                  onClick={() => handleDownload("complete")}
-                  className="download-btn"
-                  style={{
-                    width: "100%",
-                    padding: "12px 20px",
-                    backgroundColor: "#111",
-                    color: "#FFF",
-                    border: "none",
-                    borderRadius: "0px",
-                    fontFamily: "IBM Plex Sans, sans-serif",
-                    fontSize: "14px",
-                    fontWeight: 600,
-                    cursor: "pointer",
-                    transition: "background-color 0.2s ease",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "8px",
-                  }}
-                >
-                  <Download size={16} strokeWidth={2} />
-                  <span>{t.completePdfLabel}</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        );
 
       case "partner":
         return (
