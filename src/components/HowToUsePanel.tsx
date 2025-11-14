@@ -285,60 +285,7 @@ export function HowToUsePanel({ isOpen, onClose }: HowToUsePanelProps) {
           </div>
 
           <div className="divider" style={{ height: '1px', backgroundColor: '#E6E6E6', marginBottom: '32px' }} />
-{/*
-          {/* Downloads Section */}
-          <div className="content-block" style={{ marginBottom: '32px' }}>
-            <h3 
-              className="uppercase"
-              style={{
-                fontFamily: 'IBM Plex Mono, monospace',
-                fontSize: '14px',
-                fontWeight: 600,
-                letterSpacing: '0.1em',
-                color: '#111',
-                marginBottom: '16px'
-              }}
-            >
-              {t.downloads}
-            </h3>
-            <p 
-              style={{
-                fontFamily: 'Inter, sans-serif',
-                fontSize: '15px',
-                lineHeight: 1.6,
-                color: '#111',
-                fontWeight: 400,
-                marginBottom: '16px'
-              }}
-            >
-              {t.downloadsIntro}
-            </p>
-            <ul style={{ 
-              fontFamily: 'Inter, sans-serif',
-              fontSize: '15px',
-              lineHeight: 1.6,
-              color: '#111',
-              paddingLeft: '20px',
-              marginBottom: '16px'
-            }}>
-              {t.downloadsList.map((item, index) => (
-                <li key={index} dangerouslySetInnerHTML={{ __html: item }} />
-              ))}
-            </ul>
-            <p 
-              style={{
-                fontFamily: 'Inter, sans-serif',
-                fontSize: '15px',
-                lineHeight: 1.6,
-                color: '#111',
-                fontWeight: 400,
-                marginBottom: '0'
-              }}
-            >
-              {t.downloadsOutro}
-            </p>
-          </div>
-*/}
+
           <div className="divider" style={{ height: '1px', backgroundColor: '#E6E6E6', marginBottom: '32px' }} />
 
           {/* Tip Section */}
