@@ -285,7 +285,7 @@ export function HowToUsePanel({ isOpen, onClose }: HowToUsePanelProps) {
           </div>
 
           <div className="divider" style={{ height: '1px', backgroundColor: '#E6E6E6', marginBottom: '32px' }} />
-
+{/*
           {/* Downloads Section */}
           <div className="content-block" style={{ marginBottom: '32px' }}>
             <h3 
@@ -338,7 +338,7 @@ export function HowToUsePanel({ isOpen, onClose }: HowToUsePanelProps) {
               {t.downloadsOutro}
             </p>
           </div>
-
+*/}
           <div className="divider" style={{ height: '1px', backgroundColor: '#E6E6E6', marginBottom: '32px' }} />
 
           {/* Tip Section */}
