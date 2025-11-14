@@ -83,7 +83,7 @@ export function Footer({ onAboutClick, onHowToUseClick, onDownloadClick, onPartn
             >
               HOW TO USE
             </button>
-
+{/*
             <button
               onClick={onDownloadClick}
               className="footer-link-btn"
@@ -104,6 +104,7 @@ export function Footer({ onAboutClick, onHowToUseClick, onDownloadClick, onPartn
             >
               DOWNLOAD
             </button>
+            */}
 
             <button
               onClick={onPartnerClick}
